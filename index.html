@@ -22,7 +22,7 @@
 		<script>
 $(function () {
 	var austDay = new Date();
-	austDay = new Date(austDay.getFullYear()-1 + 1, 4, 8, 13, 30, 0, 0, 0);
+	austDay = new Date(austDay.getFullYear()-1 + 1, 10, 5, 14, 0, 0, 0, 0);
 	$('#defaultCountdown').countdown({until: austDay});
 	$('#year').text(austDay.getFullYear());
 	$('#month').text(austDay.getMonth());
