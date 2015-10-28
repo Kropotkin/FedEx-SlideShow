@@ -7,7 +7,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-        <title>Aviva Fedex Ireland</title>
+        <title>Aviva Ireland - FedEx II</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">         
         <meta name="keywords" content="css3, css-only, fullscreen, background, slideshow, images, content" />
         <meta name="author" content="Codrops" />
@@ -22,7 +22,7 @@
 		<script>
 $(function () {
 	var austDay = new Date();
-	austDay = new Date(austDay.getFullYear()-1 + 1, 10, 5, 14, 0, 0, 0, 0);
+	austDay = new Date(austDay.getFullYear()-1 + 1, 10, 6, 13, 0, 0, 0, 0);
 	$('#defaultCountdown').countdown({until: austDay});
 	$('#year').text(austDay.getFullYear());
 	$('#month').text(austDay.getMonth());
@@ -43,25 +43,62 @@ month[11] = "December";
 var n = month[austDay.getMonth()];
 $('#month').text(n);
 });
+
+$("#slideshow > div:gt(0)").hide();
+
+setInterval(function() { 
+  $('#slideshow > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#slideshow');
+},  3000);
+
 </SCRIPT>
+<style type="text/css">
+#slideshow { 
+    margin: 15px auto; 
+    position: relative;
+    width: 70%;
+    height: 70%;
+    padding: 10px;
+}
+
+#slideshow > div { 
+    position: absolute;      
+}
+</style>
     </head>
     <body id="page">
-        <ul class="cb-slideshow">
-            <li><span>Image 01</span><div><h3>First ever hackathon</h3></div></li>
-            <li><span>Image 02</span><div><h3>24 Hours</h3></div></li>
-            <li><span>Image 03</span><div><h3>6 Teams</h3></div></li>
-			<li><span>Image 04</span><div><h3>1 Winner</h3></div></li> 
-            <li><span>Image 05</span><div><h3>Join US</h3></div></li>      
-			<li><span>Image 06</span><div><h3>let's Collaborate</h3></div></li>         
-        </ul>
-        <div class="container">
+		<div class="container">
             <!-- Codrops top bar -->
            <div class="codrops-top">               
-               <h4>It’s almost <strong>Fedex Showcase Time</strong> in the conference room</h4>
+               <h4>It’s almost <strong>Fedex Showcase Time</strong> in the AGORA</h4>
 				<span id="logo"> </span>
 				<div id="defaultCountdown"></div>
                 <span id="fedexLogo"></span>
             </div>
         </div>
+        <div id="slideshow">
+		   <div>
+			 <img src="images/1.png" />
+		   </div>
+		   <div>
+			 <img src="images/2.png" />
+		   </div>
+		   <div>
+			 <img src="images/3.png" />
+		   </div>
+		   <div>
+			 <img src="images/4.png" />
+		   </div>
+		   <div>
+			 <img src="images/5.png" />
+		   </div>
+		   <div>
+			 <img src="images/6.png" />
+		   </div>		   
+		</div>
     </body>
 </html>
