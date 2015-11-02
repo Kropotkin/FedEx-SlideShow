@@ -43,6 +43,9 @@ h1,h2,h3,h4,h5,h6 {
 	font-size:100%;
 	font-weight:normal;
 }
+.codrops-top h1 {
+	font-size: 150%;
+}
 q:before,q:after {
 	content:'';
 }
