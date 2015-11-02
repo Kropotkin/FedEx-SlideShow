@@ -1,10 +1,9 @@
 @font-face {
-    font-family: 'BebasNeueRegular';
-    src: url('fonts/BebasNeue-webfont.eot');
-    src: url('fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/BebasNeue-webfont.woff') format('woff'),
-         url('fonts/BebasNeue-webfont.ttf') format('truetype'),
-         url('fonts/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+    font-family: 'digital-7';
+    src: url('fonts/digital-7.eot');
+    src: url('fonts/digital-7.eot?#iefix') format('embedded-opentype'),
+         url('fonts/digital-7.woff') format('woff'),
+         url('fonts/digital-7.ttf') format('truetype');         
     font-weight: normal;
     font-style: normal;
 }
@@ -51,7 +50,7 @@ abbr,acronym { border:0;
 }
 /* General Demo Style */
 body{
-	font-family: omnes-pro, Helvetica, Helvetica Neue, Arial, sans-serif;
+	font-family: digital-7, Helvetica, Helvetica Neue, Arial, sans-serif;
 	background: #000;
 	font-weight: 400;
 	font-size: 15px;
@@ -82,7 +81,7 @@ a{
     text-align: left;
 }
 .container > header h1{
-	font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+	font-family: 'digital-7', 'Arial Narrow', Arial, sans-serif;
 	font-size: 35px;
 	line-height: 35px;
 	position: relative;
@@ -102,22 +101,18 @@ a{
 }
 /* Header Style */
 .codrops-top{
-	font-family:"Seoge Print", Arial, sans-serif;
+	font-family:"digital-7", Arial, sans-serif;
 	height:125px;
 	line-height: 60px;
 	font-size: 1.5em;
 	width: 100%;
-	background-color:#FFD900 ;
-	background-image: url(../images/beam.png);
 	background-repeat:no-repeat;
 	background-size:auto 100%;
 	opacity: 0.9;
 	text-transform: uppercase;
 	z-index: 9999;
 	position: relative;
-	-moz-box-shadow: 1px 0px 2px #000;
-	-webkit-box-shadow: 1px 0px 2px #000;
-	box-shadow: 1px 0px 2px #000;
+	COLOR:#FFD900;
 }
 .codrops-top padding{
 	
@@ -140,7 +135,7 @@ p.codrops-demos a.current-demo:hover{
     display: inline-block;
 	border: 1px solid #6d0019;
 	padding: 4px 10px 3px;
-	font-size: 13px;
+	/*font-size: 13px;*/ font-size:15px;
 	line-height: 18px;
 	margin: 2px 3px;
 	font-weight: 800;
