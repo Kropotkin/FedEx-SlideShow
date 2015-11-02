@@ -19,11 +19,11 @@
     width: 100%;
     text-align: center;
     opacity: 0;
-    -webkit-animation: titleAnimation 36s vertical infinite 0s;
-    -moz-animation: titleAnimation 36s linear infinite 0s;
-    -o-animation: titleAnimation 36s linear infinite 0s;
-    -ms-animation: titleAnimation 36s linear infinite 0s;
-    animation: titleAnimation 36s linear infinite 0s;
+    -webkit-animation: titleAnimation 42s vertical infinite 0s;
+    -moz-animation: titleAnimation 42s linear infinite 0s;
+    -o-animation: titleAnimation 42s linear infinite 0s;
+    -ms-animation: titleAnimation 42s linear infinite 0s;
+    animation: titleAnimation 42s linear infinite 0s;
 }
 .cb-slideshow li div h3 {
     font-family: 'digital-7', 'Arial Narrow', Arial, sans-serif;
@@ -31,8 +31,14 @@
     padding: 125px 50PX 0 10PX; 
     color: #FFD900;
 }
-.cb-slideshow li:nth-child(3) div h3{font-size:70px; text-align:left;  padding: 125px 100PX 0 250PX;}
-.cb-slideshow li:nth-child(1) span{background-color:black;}
+.cb-slideshow li div h1 {
+    font-family: 'digital-7', 'Arial Narrow', Arial, sans-serif;
+    font-size: 200px;
+    padding: 125px 50PX 0 10PX; 
+    color: #FFD900;
+}
+.cb-slideshow li:nth-child(4) div h3{font-size:70px; text-align:left;  padding: 125px 100PX 0 250PX;}
+.cb-slideshow li:nth-child(2) span{background-color:black;}
 
 .cb-slideshow li:nth-child(2) div {
     -webkit-animation-delay: 6s;
@@ -69,6 +75,13 @@
     -o-animation-delay: 30s;
     -ms-animation-delay: 30s;
     animation-delay: 30s;
+}
+.cb-slideshow li:nth-child(7) div {
+    -webkit-animation-delay: 36s;
+    -moz-animation-delay: 36s;
+    -o-animation-delay: 36s;
+    -ms-animation-delay: 36s;
+    animation-delay: 36s;
 }
 @-webkit-keyframes titleAnimation { 
 	0% {
