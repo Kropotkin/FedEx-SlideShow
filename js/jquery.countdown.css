@@ -1,36 +1,14 @@
 /* jQuery Countdown styles 2.0.0. */
 .is-countdown {
-	border: 1px solid #ccc;
-	background-color: #eee;
+	
+	background-color: #333;
 	
 }
 #defaultCountdown
 {
-	width:40%;	float:left;
+	width:55%;	margin:0 23.5%;
 }
-#logo{
-    background-color: transparent;
-    background-image: url(../images/logo-aviva.png);
-	margin-left:2%;
-	float:left;
-    background-repeat: no-repeat;
-    display: block;
-    height: 2em;
-    text-indent: -9999px;
-    width:28%;
-	margin-top:-15px;
-}
-#fedexLogo{
-    background-color: transparent;
-    background-image: url(../images/fedex_logo.gif);
-	padding-left:3%;
-	float:right;
-    background-repeat: no-repeat;
-    display: block;
-    height: 8em;   
-    width:9%;
-	margin-top:-63px;
-}
+
 .countdown-rtl {
 	direction: rtl;
 }
@@ -54,6 +32,7 @@
 }
 .countdown-show4 .countdown-section {
 	width: 24%;	
+	text-align:center;
 }
 .countdown-show5 .countdown-section {
 	width: 19.5%;
@@ -71,18 +50,21 @@
 .countdown-section {
 	display: block;
 	float: left;
-	font-size: 75%;
+	font-size: 100%;
 	text-align: center;
 	/*margin:0 5px;*/
 }
 .countdown-amount {
-    font-size: 200%;
+    font-size: 220%;
 	float:left;
 }
 
 .countdown-period {
     text-align:left;
 	display: block;
+	margin-left:10%;
+	font-size:150%;
+	
 }
 .countdown-descr {
 	display: block;
