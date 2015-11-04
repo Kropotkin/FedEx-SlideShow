@@ -7,60 +7,61 @@
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-        <title>AVIVA Ireland FedEx II</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <meta name="description" content="Slide show for AVIVA Ireland FedEx II" />
-        <meta name="keywords" content="aviva, Aviva Ireland, FedEx" />     
-        <link rel="shortcut icon" href="css/favicon.ico"> 
+        <title>Aviva Fedex Ireland</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">         
+        <meta name="keywords" content="css3, css-only, fullscreen, background, slideshow, images, content" />
+        <meta name="author" content="Codrops" />
+		<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
         <link rel="stylesheet" type="text/css" href="css/demo.css" />
-        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/style3.css" />
 		<script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
-		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<script src="js/jquery.plugin.js"></script>
 		<script src="js/jquery.countdown.js"></script>
 		<link rel="stylesheet" type="text/css" href="js/jquery.countdown.css"></link>
 		<script>
-			$(function () {
-				var austDay = new Date();
-				austDay = new Date(austDay.getFullYear()-1 + 1, 10, 6, 13, 0, 0, 0, 0);
-				$('#defaultCountdown').countdown({until: austDay});
-				$('#year').text(austDay.getFullYear());
-				$('#month').text(austDay.getMonth());
-				var d = new Date();
-				var month = new Array();
-				month[0] = "January";
-				month[1] = "February";
-				month[2] = "March";
-				month[3] = "April";
-				month[4] = "May";
-				month[5] = "June";
-				month[6] = "July";
-				month[7] = "August";
-				month[8] = "September";
-				month[9] = "October";
-				month[10] = "November";
-				month[11] = "December";
-				var n = month[austDay.getMonth()];
-				$('#month').text(n);
-			});
-			</script>
+$(function () {
+	var austDay = new Date();
+	austDay = new Date(austDay.getFullYear()-1 + 1, 4, 8, 13, 30, 0, 0, 0);
+	$('#defaultCountdown').countdown({until: austDay});
+	$('#year').text(austDay.getFullYear());
+	$('#month').text(austDay.getMonth());
+	var d = new Date();
+var month = new Array();
+month[0] = "January";
+month[1] = "February";
+month[2] = "March";
+month[3] = "April";
+month[4] = "May";
+month[5] = "June";
+month[6] = "July";
+month[7] = "August";
+month[8] = "September";
+month[9] = "October";
+month[10] = "November";
+month[11] = "December";
+var n = month[austDay.getMonth()];
+$('#month').text(n);
+});
+</SCRIPT>
     </head>
     <body id="page">
-		<div class="container">          
+        <ul class="cb-slideshow">
+            <li><span>Image 01</span><div><h3>First ever hackathon</h3></div></li>
+            <li><span>Image 02</span><div><h3>24 Hours</h3></div></li>
+            <li><span>Image 03</span><div><h3>6 Teams</h3></div></li>
+			<li><span>Image 04</span><div><h3>1 Winner</h3></div></li> 
+            <li><span>Image 05</span><div><h3>Join US</h3></div></li>      
+			<li><span>Image 06</span><div><h3>let's Collaborate</h3></div></li>         
+        </ul>
+        <div class="container">
+            <!-- Codrops top bar -->
            <div class="codrops-top">               
-               <h2>It’s almost <span class="big"><strong>Fedex Showcase Time</strong></span> in the AGORA</h2>
-				<div id="defaultCountdown"></div>             
+               <h4>It’s almost <strong>Fedex Showcase Time</strong> in the conference room</h4>
+				<span id="logo"> </span>
+				<div id="defaultCountdown"></div>
+                <span id="fedexLogo"></span>
             </div>
         </div>
-        <ul class="cb-slideshow">
-			<li><div><h1><BR/>FEDEX II</BR></h1></div></li>
-            <li><div><h3><BR/>24 hrs</BR></h3></div></li>
-            <li><div><BR/><h3>COLLABORATE <BR/> AND <BR/> INNOVATE</h3></div></li>
-            <li><div><h3>&nbsp;1.&nbsp;&nbsp;CLAIMS FIELD APP <BR/>2.&nbsp;&nbsp;DATA ANALYTICS <BR/>3.&nbsp;&nbsp;FOUR SHEETS <BR/>4.&nbsp;&nbsp;DIGITAL EXCHANGE <BR/>5.&nbsp;&nbsp;ONLINE LETTER OF AUTHORITY </h3></div></li>
-            <li><div><h3><BR/>ONE WINNER</h3></div></li>
-            <li><div><h3><span class="medium">KICK OFF THURSDAY<BR/>5TH November</span><BR/>FEDEX EXPO AREA <BR/><span class="small">GROUND FLOOR COFFEE DOCK</</span></h3></div></li>
-            <li><div><h3><span class="medium">SHOWCASE<BR/> FRIDAY, 6TH November 1 pm</span><BR/> AGORA</h3></div></li>			
-        </ul>
-        
     </body>
 </html>
