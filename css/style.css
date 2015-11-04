@@ -7,9 +7,6 @@
     left: 0px;
     z-index: 0;
 }
-.cb-slideshow:after {
-    content: '';
-}
 
 .cb-slideshow li div {
     z-index: 1000;
@@ -86,19 +83,19 @@
 @-webkit-keyframes titleAnimation { 
 	0% {
 	    opacity: 0;
-	     -webkit-transform: translateX(300%);
+	    -webkit-transform: translateX(300%);
 	}
 	8% {
 	    opacity: 1;
-	     -webkit-transform: translateX(0%);
+	    -webkit-transform: translateX(0%);
 	}
 	17% {
 	    opacity: 1;
-	     -webkit-transform: translateX(0%);
+	    -webkit-transform: translateX(0%);
 	}
 	19% {
 	    opacity: 0;
-	     -webkit-transform: translateX(-100%);
+	    -webkit-transform: translateX(-100%);
 	}
 	25% { opacity: 0 }
 	100% { opacity: 0 }
